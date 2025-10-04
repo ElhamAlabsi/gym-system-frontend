@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { X, Menu } from "lucide-react";
+import { useAuth } from "../Contexts/AuthContext";
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
+    const { user } = useAuth();
 
     return (
 

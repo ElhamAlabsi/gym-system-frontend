@@ -13,13 +13,24 @@ export interface AuthResponceDto {
 }
 
 
-export interface RegisterDto{
-    name:string ;
-    email :string;
-    password :string;
-    confirmpassword:string;
+export interface RegisterDto {
+    name: string;
+    email: string;
+    password: string;
+    confirmpassword: string;
 
 }
 
+export interface AllUsersDto {
+    id: int;
+    name: string;
+    email: string;
+    role: string;
 
 
+}
+
+export interface Login{
+    email :string;
+    password:string;
+}
